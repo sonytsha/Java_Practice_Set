@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Code_new_1 {
+public static void main ( String args[]){
+    Scanner input = new Scanner(System.in);
+
+    System.out.println(input.nextInt()); 
+    System.out.println(input.next()); // for string input
+    System.out.println(input.nextLine()); // string with space
+
+}
+
+class primitives {
+    public static void main(String[] agrs) {
+        int rollno = 64;
+        char letter = 'r';
+        float marks  = 98.76f;
+        double largedecimalnumber = 347347843784378.34545;
+        long largeinteger = 45874578L;
+        boolean check = false;
+
+        //Integer rno = 64 ; // wrapper class
+       // rno.  --- wrapper class use
+
+    }
+}
+
+}
