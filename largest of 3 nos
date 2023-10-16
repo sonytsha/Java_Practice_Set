@@ -1,0 +1,35 @@
+
+// largest of 3 nos
+import java.util.Scanner;
+public class Ciode_new_7 {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int max = Math.max(c, Math.max(a, b));
+        System.out.println(max);
+
+        // second way ----------------------------------------------------------------------------------------
+        int maximum = a;
+        if (b > maximum) {
+            maximum = b;
+        }
+        if (c > maximum) {
+            maximum = c;
+        }
+        System.out.println(maximum);
+
+        // third way-----------------------------------------
+        int maxm = 0;
+        if (a > b) {
+            maxm = a;
+        } else {
+            maxm = b;
+        }
+        if (c > maxm) {
+            maxm = c;
+        }
+        System.out.println(maxm);
+    }
+}
