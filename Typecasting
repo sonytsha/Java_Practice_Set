@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Code_new_3 {
+    public static void main(String args[]) {
+        //type-casting
+        Scanner sc = new Scanner(System.in);
+        int num = (int) (67.78f);
+        System.out.println(num);
+
+        //automatic type promotion in expression
+        int a = 257;
+        byte b = (byte) (a); /// max 256 can be taken for byte , so 257%256 = 1
+        System.out.println(b);
+
+        byte x = 40;
+        byte y = 50;
+        byte z = 100;
+        int d = ( x*y)/z;    // int becasuse byte range exceeds
+        System.out.println(d);
+
+        int number = 'A';
+        System.out.println(number);
+
+        byte m = 42;
+        char n = 'a';
+        short s = 1024;
+        int i = 5000;
+        float f = 5.67f;
+        double e = 0.1234;
+        double result = ( f * m ) + ( i / n) - ( e - s);
+        // float + int - double = double
+        System.out.println(result);
+        System.out.println((f * m) + " " + ( i / n) +  " " + ( e - s));
+    }
+}
