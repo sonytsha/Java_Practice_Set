@@ -1,0 +1,22 @@
+//Case Check
+import java.util.Scanner;
+public class Code_new_8 {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        char ch = in.next().trim().charAt(0);
+        // charat 0 takes the value at 0 th position and trim removes the spaces
+        // in array sring start at 0
+        // ---------- dot trim means remove all the extra space ------------------
+        System.out.println(ch);
+        System.out.println(in.next().trim());
+        // char type at no 2
+        String word = "sony";
+        System.out.println(word.charAt(2));
+        // check if its upper case or lower case
+        if (ch >= 'a' && ch <= 'z') {
+            System.out.println("lowercase");
+        } else {
+            System.out.println("uppercase");
+        }
+    }
+}
