@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Code_new_15 {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        /// ------------ one way --------------------------
+         switch (n) {
+            case 1, 2, 3, 4, 5 -> System.out.println("weekday");
+            case 6, 7 -> System.out.println("weekend");
+        } 
+        /// -------------- second way ----------------------
+        /* switch (n) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("weekday");
+                break;
+            case 6:
+            case 7:
+                System.out.println("weekend");
+                break;
+        } */ 
+
+    }
+}
