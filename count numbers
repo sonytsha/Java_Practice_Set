@@ -1,0 +1,16 @@
+///// n = 13839 , count the no of 3s = 2
+
+public class Code_new_10 {
+    public static void main(String agrs[]) {
+        int n = 13839;
+        int count = 0;
+        while (n > 0) {
+            int rem = n % 10;
+            if (rem == 3) {
+                count++;
+            }
+            n = n / 10;
+        }
+        System.out.println(count);
+    }
+}
