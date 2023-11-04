@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main {
+public static void main (String[] args) {
+      sum1();
+}
+    static void sum1() {
+    Scanner in = new Scanner(System.in);
+    System.out.print("Enter First Number");
+    int num1= in.nextInt();
+    System.out.print("Enter Second Number");
+    int num2 = in.nextInt();
+    int sum1 = num1 + num2;
+    System.out.println("The sum =" + sum1);
+}
+/*
+
+access modifier ( we'll look in OOP) return type name()
+// body
+return statement;
+
+ */
+}
