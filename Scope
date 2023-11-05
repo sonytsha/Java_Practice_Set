@@ -1,0 +1,36 @@
+//SCOPE- basically means where we can access our variables
+// 1 ) function scope : if u create a variable or anything in a function, you can only access ot within the function
+
+public class Code_new_25 {
+    public static void main ( String[] args) {
+        int a = 10; // initialized
+        int b = 20;
+        String name = "Sony";
+// anything that it initialized outside the block can be used inside the block but anything that is inside the block, can not be used
+        // anything that is initialized outside the block can not be initlialized in side the block, but anything iside can be initialized outside as well
+
+        {
+          //  int a = 78; // already initialized outside the block in the same method hence you can not initialise again but you can change the value like a =100
+            a = 78; // reassign the original reference variable to some other value ----- in order to create new one , need to inilialize again like int m with int
+            System.out.println(a);
+            int c = 99;
+            name = "Sonia";
+            System.out.println(name);
+            // value initialised in this block, will remain in block
+        }
+        System.out.println(a);
+        System.out.println(name);
+
+        // System.out.println(c); // can not be used outside the block
+   // scoping in for loops
+        for ( int i = 0; i< 4; i++) {
+            System.out.println(i);
+        }
+      //  System.out.println(i); --- can not use outside for loop
+    }
+static void random ( int marks ) {
+        int num = 67;
+        System.out.println(num);
+        System.out.println(marks);
+}
+}
