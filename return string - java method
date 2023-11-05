@@ -1,0 +1,13 @@
+// string example - java method
+
+public class Code_new_21 {
+public static void main ( String[] args) {
+    String message = greet();
+    System.out.println(message);
+}
+
+static String greet(){
+    String greeting = "how are you";
+    return greeting;
+}
+}
