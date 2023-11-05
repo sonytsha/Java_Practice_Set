@@ -1,0 +1,20 @@
+// variable length arguments  --- when you create a method, that takes variable number of arguments, it is known as variable arguments
+// or VarArgs methods - when we do not know how many inputs we are giving
+import java.util.Arrays;
+
+public class Code_new_27 {
+    public static void main ( String[] args) {
+        fun (2,34,5,546,6775);
+        fun(); // this will be an  empty array
+    multiple( 2,3,"sony","hehe");
+    }
+    static void multiple (int a, int b, String ...v) {/// ...v means variable number of arguments
+// varible length arguments always come at the end
+
+
+    }
+
+        static void fun ( int ...v) { // array of type int
+        System.out.println(Arrays.toString(v));
+    }
+}
