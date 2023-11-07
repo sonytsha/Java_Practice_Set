@@ -1,0 +1,22 @@
+// function overloading -- imagine u have 2 functions with the same name, they can exist if the parameters are different
+// function overloading happens at complie time means at system.out.println(67) or so on, it will decide which function to run, because if int it ll run the 1st one, if int with 2 paraments itll run the 3rd one, if string then second one
+public class Code_new_28 {
+public static void main ( String[] args) {
+fun(67);
+fun("Sonytsha");
+}
+
+static void fun( int a) {
+    System.out.println(a);
+
+}
+
+static void fun(String name ){
+System.out.println(name);
+}
+    static void fun(int c, int d ){
+        System.out.println(c);
+        System.out.println(d);
+    }
+
+}
